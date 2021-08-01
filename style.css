@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.temp h1{
+    display: flex;
+}
+.temp span{
+    color: #888;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.weather{
+    padding: 10px;
+}
+
+.temp{
+    display: flex;
+    justify-content: flex-start;
+}
+
+p{
+    font-weight: 600;
+    color: rgb(65, 60, 60);
+}
+
+.weather-condition{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 800px;
+}
+
+.temp, .w-des{
+    flex-basis: 50%;
+}
+
+.weather-condition h1{
+    
+}
+
+.w-des span{
+ color: rgb(109, 106, 106);
+}
+
+.days{
+   margin-top: 25px;
+}
+
+@media screen and (min-width: 750px) {
+    .days {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.seven-days{
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(0, 0, 0, .2);
+   align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+    .seven-days {
+    display: inline-block;
+    padding-left: 5px;
+    border: none;
+    }
+}
+
+.seven-days p{
+    flex-basis: 92px;
+}
+
+.temp-high{
+    font-weight: bold;
+}
+
+.seven-days span{
+    display: block;
+    text-align: center;
+}
+
+.pollen span{
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 450px) {
+    .sd-temp{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 15%;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .pollen span {
+    display: inline-block;
+    padding-left: 5px;
+    }
+}
